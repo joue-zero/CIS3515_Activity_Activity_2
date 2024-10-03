@@ -23,8 +23,6 @@ class DisplayActivity : AppCompatActivity() {
             val data: Intent? = it.data
             val textSize = data?.getIntExtra("textSize", 0)
             lyricsDisplayTextView.textSize = textSize!!.toFloat()
-            // the  !! operator is used to assert that the value is not null
-            // the data?.getIntExtra() method returns null if the key is not found
         }
     }
     // TODO Step 3: Use returned value for lyricsDisplayTextView text size
